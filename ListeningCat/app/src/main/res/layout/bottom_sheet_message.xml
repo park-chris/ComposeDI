@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="300dp"
+    android:background="@color/background_color"
+    android:gravity="center"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/messageEditText"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        app:tint="@color/opposite_color"
+        android:background="@android:color/transparent"
+        android:hint="@string/input_message" />
+
+    <ImageButton
+        android:id="@+id/clearButton"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_close"
+        app:tint="@color/grey"
+        android:visibility="gone"
+        android:layout_gravity="bottom"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="40dp" />
+
+
+    <ImageButton
+        android:id="@+id/messageButton"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_add"
+        android:layout_gravity="bottom"
+        app:tint="@color/opposite_color"
+        android:background="?attr/selectableItemBackground"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>

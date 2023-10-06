@@ -5,20 +5,26 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.crystal.listeningcat.databinding.ItemFullMessageBinding
 import com.crystal.listeningcat.databinding.ItemMessageBinding
 import com.crystal.listeningcat.message.Message
 
-class MessageAdapter(private val onClick: (String) -> Unit): ListAdapter<Message, MessageAdapter.ViewHolder>(
-    diffUtil
-) {
+class FullMessageAdapter(private val onClick: (Message, MessageState) -> Unit): ListAdapter<Message, FullMessageAdapter.ViewHolder>( diffUtil) {
 
-    inner class ViewHolder(private val binding: ItemMessageBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class ViewHolder(private val binding: ItemFullMessageBinding): RecyclerView.ViewHolder(binding.root) {
 
         fun bind(message: Message) {
             binding.messageTextView.text = message.message
 
-            binding.root.setOnClickListener {
-                onClick(message.message)
+            binding.playButton.setOnClickListener {
+                onClick(message, MessageState.PLAY)
+            }
+
+            binding.deleteButton.setOnClickListener {
+                onClick(message, MessageState.DELETE)
+            }
+            binding.editButton.setOnClickListener {
+                onClick(message, MessageState.EDIT)
             }
         }
     }
@@ -37,7 +43,7 @@ class MessageAdapter(private val onClick: (String) -> Unit): ListAdapter<Message
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
-            ItemMessageBinding.inflate(
+            ItemFullMessageBinding.inflate(
                 LayoutInflater.from(parent.context),
                 parent,
                 false

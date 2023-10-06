@@ -1,4 +1,7 @@
 package com.crystal.listeningcat.home
 
-class MessageState {
+enum class MessageState {
+    PLAY,
+    EDIT,
+    DELETE
 }

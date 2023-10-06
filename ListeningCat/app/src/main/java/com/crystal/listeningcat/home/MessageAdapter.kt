@@ -1,6 +1,5 @@
-package com.crystal.listeningcat
+package com.crystal.listeningcat.home
 
-import android.os.Handler.Callback
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
@@ -9,10 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.crystal.listeningcat.databinding.ItemMessageBinding
 import com.crystal.listeningcat.message.Message
 
-class MessageAdapter(private val onClick: (String) -> Unit): ListAdapter<Message, MessageAdapter.ViewHolder>(diffUtil) {
+class MessageAdapter(private val onClick: (String) -> Unit): ListAdapter<Message, MessageAdapter.ViewHolder>(
+    diffUtil
+) {
 
     inner class ViewHolder(private val binding: ItemMessageBinding): RecyclerView.ViewHolder(binding.root) {
-
         fun bind(message: Message) {
             binding.messageTextView.text = message.message
 
