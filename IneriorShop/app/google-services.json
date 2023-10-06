@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "237505656856",
+    "project_id": "interiorshop-5087f",
+    "storage_bucket": "interiorshop-5087f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:237505656856:android:6ddc451bdf4497053e6b6d",
+        "android_client_info": {
+          "package_name": "com.crystal.ineriorshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "237505656856-gk7rv98rvk8cnri23ecabais7lv8cg9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACeG5OFjn6HVi7ouSDujxIFBUxkpRj6sY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "237505656856-gk7rv98rvk8cnri23ecabais7lv8cg9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

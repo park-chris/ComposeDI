@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "930594626191",
+    "project_id": "fastcampus-chat-26143",
+    "storage_bucket": "fastcampus-chat-26143.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:930594626191:android:5155b53c396b95ad6e6efa",
+        "android_client_info": {
+          "package_name": "com.crystal.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "930594626191-2u3r86jlkjur01j6oresjg45tu36trup.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfBlmHChGY_Z_DwGhyoLea0OlFBPQUrnk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "930594626191-2u3r86jlkjur01j6oresjg45tu36trup.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

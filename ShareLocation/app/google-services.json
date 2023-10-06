@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1066065709653",
+    "project_id": "fastcampus-share-location",
+    "storage_bucket": "fastcampus-share-location.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1066065709653:android:d9b76c555ec6ee12cf22dc",
+        "android_client_info": {
+          "package_name": "com.crystal.sharelocation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1066065709653-bhf3ung14lj1inr62pk1ofq2ufc76ajh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLIIi7QZy6fTRr4gXoPPXMcflyB0cA6pU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1066065709653-bhf3ung14lj1inr62pk1ofq2ufc76ajh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
